@@ -41,11 +41,13 @@
     .hamb i,.hamb i:before,.hamb i:after{display:block;width:21px;height:2px;background:var(--ink);content:"";position:relative}
     .hamb i:before{position:absolute;top:-7px}.hamb i:after{position:absolute;top:7px}
 
-    .hero{padding:48px 0 26px;background:linear-gradient(180deg,#fff 0%,#f8fafb 100%)}
-    .hero-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:46px;align-items:start}
-    .eyebrow{font-size:13px;font-weight:800;letter-spacing:.11em;color:var(--accent-2);margin:6px 0 14px;text-transform:uppercase}
-    h1{font-size:clamp(38px,5vw,68px);line-height:.98;letter-spacing:-.055em;margin:0;max-width:620px}
-    .lead{font-size:19px;line-height:1.55;color:var(--muted);margin:24px 0 0;max-width:600px}
+    .hero{padding:40px 0 24px;background:linear-gradient(180deg,#fff 0%,#f8fafb 100%)}
+    .hero-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:42px;align-items:start}
+    .eyebrow{font-size:13px;font-weight:800;letter-spacing:.11em;color:var(--accent-2);margin:4px 0 12px;text-transform:uppercase}
+    h1{font-size:clamp(34px,4.2vw,56px);line-height:1.02;letter-spacing:-.045em;margin:0;max-width:590px}
+    .lead{font-size:17px;line-height:1.5;color:var(--muted);margin:14px 0 0;max-width:560px}
+    .cappadocia-line{margin-top:18px;height:68px;overflow:hidden;opacity:.34;color:#66798c}
+    .cappadocia-line svg{display:block;width:100%;height:100%}
     .mini-trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px;color:#44515f;font-size:13px;font-weight:700}
     .mini-trust span{display:flex;align-items:center;gap:7px}
     .mini-trust b{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:#eaf8f2;color:var(--success);font-size:12px}
@@ -84,10 +86,11 @@
       .wrap{width:min(100% - 28px,680px)}
       .desktop-nav{display:none}.hamb{display:grid}
       .nav{height:76px}.brand-copy strong{font-size:16px}.brand-copy span{font-size:10px}
-      .hero{padding:28px 0 18px}.hero-grid{grid-template-columns:1fr;gap:24px}
+      .hero{padding:22px 0 16px}.hero-grid{grid-template-columns:1fr;gap:12px}
       .eyebrow{display:none}
-      h1{font-size:45px;line-height:1.02;letter-spacing:-.05em}
-      .lead{font-size:16px;line-height:1.5;margin-top:15px}
+      h1{font-size:34px;line-height:1.06;letter-spacing:-.04em;max-width:520px}
+      .lead{font-size:15px;line-height:1.45;margin-top:10px;max-width:520px}
+      .cappadocia-line{height:52px;margin-top:10px;opacity:.30}
       .mini-trust{display:none}
       .bookbox{border-radius:16px;padding:18px;box-shadow:0 8px 22px rgba(13,37,64,.07)}
       .book-title{margin-bottom:14px}.book-title small{display:none}
@@ -102,7 +105,7 @@
       .mobile-bottom button{height:58px;border:0;background:#fff;color:var(--ink);font-weight:850;font-size:15px}.mobile-bottom button+button{border-left:1px solid var(--line)}
       footer{padding-bottom:90px}
     }
-    @media(max-width:430px){h1{font-size:41px}.brand-copy strong{font-size:15px}.mark{width:42px;height:42px}.why-grid{grid-template-columns:1fr}}
+    @media(max-width:430px){h1{font-size:32px}.brand-copy strong{font-size:15px}.mark{width:42px;height:42px}.why-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -124,8 +127,23 @@
   <div class="wrap hero-grid">
     <div>
       <div class="eyebrow">Kayseri Airport · ASR</div>
-      <h1>Kayseri Airport to Cappadocia Transfer</h1>
-      <p class="lead">Shared shuttle and private transfer service between Kayseri Airport and your hotel in Cappadocia.</p>
+      <h1>Kayseri Airport to Cappadocia Transfers</h1>
+      <p class="lead">Shared shuttle and private hotel transfers from Kayseri Airport (ASR).</p>
+      <div class="cappadocia-line" aria-hidden="true">
+        <svg viewBox="0 0 760 90" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
+          <path d="M0 78H760" stroke="currentColor" stroke-width="2"/>
+          <path d="M18 78C54 70 76 63 105 61C132 59 146 69 168 69C192 69 214 58 234 54C256 49 272 57 292 60C311 63 330 61 345 55C366 47 384 42 404 44C426 46 439 59 457 62C482 66 500 59 519 55C545 49 564 56 586 60C610 65 634 61 660 56C692 49 718 52 742 58" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M112 63C112 55 116 48 122 43C126 40 129 36 130 31C131 26 128 21 124 18C121 16 121 11 124 8C127 5 132 5 135 8C138 11 138 16 136 19C133 23 133 28 135 33C137 38 142 42 145 46C149 51 150 57 150 63" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M190 67C190 60 193 54 198 50C202 47 204 43 204 39C204 35 202 32 200 29C197 26 198 22 201 20C204 18 208 18 211 20C214 22 215 26 213 29C211 33 211 36 213 40C215 44 219 47 222 50C227 55 229 61 229 67" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M330 61C330 52 333 45 338 39C342 34 343 29 341 25C339 21 336 17 337 13C338 8 342 5 347 5C352 5 356 9 356 14C356 18 353 22 352 26C351 31 354 36 358 41C363 47 366 53 366 61" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M470 64C470 57 473 50 478 46C482 42 484 37 483 33C482 29 480 26 478 23C476 19 478 15 481 13C484 11 489 11 492 14C495 17 495 21 493 24C490 28 490 33 492 37C494 41 498 44 501 48C505 52 507 58 507 64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M605 61C605 53 608 47 613 42C617 38 619 34 618 29C617 25 614 22 613 19C611 15 613 11 617 9C621 7 625 8 628 11C631 14 631 18 629 21C626 25 626 30 628 34C630 39 635 42 638 47C642 51 644 56 644 61" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M77 65L86 43L95 65M70 65H102" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M260 62L267 47L274 62M253 62H281" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M540 61L548 44L556 61M533 61H563" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M680 58L689 39L698 58M673 58H705" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
       <div class="mini-trust"><span><b>✓</b> Hotel service</span><span><b>✓</b> Shared & private</span><span><b>✓</b> Return transfers</span></div>
     </div>
 
