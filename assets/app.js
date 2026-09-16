@@ -1,5 +1,1 @@
-document.querySelectorAll('[data-roundtrip]').forEach(toggle=>{
-  toggle.addEventListener('change',e=>{
-    document.querySelectorAll('[data-return-fields]').forEach(x=>x.hidden=!e.target.checked)
-  })
-})
+const rt=document.getElementById('roundTrip');const rr=document.getElementById('returnRow');if(rt&&rr){rt.addEventListener('change',()=>{rr.hidden=!rt.checked;});}
