@@ -20,7 +20,7 @@
       e.preventDefault();
       const data=new FormData(form);
       const p=new URLSearchParams();
-      ["direction","destination","date","passengers"].forEach(k=>{ if(data.get(k)) p.set(k,data.get(k)); });
+      ["trip_type","service","direction","destination","date","passengers"].forEach(k=>{ if(data.get(k)) p.set(k,data.get(k)); });
       location.href="/booking/?"+p.toString();
     });
   });
@@ -28,7 +28,7 @@
   const full=qs("#full-booking");
   if(full){
     const params=new URLSearchParams(location.search);
-    ["direction","destination","date","passengers"].forEach(k=>{
+    ["trip_type","service","direction","destination","date","passengers"].forEach(k=>{
       const el=full.elements[k];
       if(el && params.get(k)) el.value=params.get(k);
     });
@@ -51,11 +51,20 @@
     passengerCount.addEventListener("change",renderPassengers);
     renderPassengers();
 
+    const tripType=qs("#trip-type",full);
+    const returnFields=qs("#return-fields",full);
+    function syncTripType(){
+      const round=tripType && tripType.value==="Round Trip";
+      if(returnFields) returnFields.hidden=!round;
+      ["return_date","return_flight","return_flight_time"].forEach(name=>{ const el=full.elements[name]; if(el) el.required=!!round; });
+    }
+    if(tripType){ tripType.addEventListener("change",syncTripType); syncTripType(); }
+
     const continueBtn=qs("#continue-booking");
     const passengerStep=qs("#passenger-step");
     if(continueBtn && passengerStep){
       continueBtn.addEventListener("click",()=>{
-        const requiredBefore=["service","direction","destination","date","flight","hotel","passengers"];
+        const requiredBefore=["trip_type","service","direction","destination","date","flight","flight_time","hotel","passengers"];
         for(const name of requiredBefore){
           const el=full.elements[name];
           if(el && !el.checkValidity()){ el.reportValidity(); return; }
@@ -71,10 +80,18 @@
       if(!full.reportValidity()) return;
       const d=new FormData(full);
       let text=`Booking request\n\n`;
-      text+=`Transfer option: ${d.get("service")}\n`;\n      text+=`Direction: ${d.get("direction")}\n`;
+      text+=`Trip type: ${d.get("trip_type")}\n`;
+      text+=`Transfer option: ${d.get("service")}\n`;
+      text+=`Direction: ${d.get("direction")}\n`;
       text+=`Route: Kayseri Airport (ASR) ↔ ${d.get("destination")}\n`;
       text+=`Date: ${d.get("date")}\n`;
       text+=`Flight: ${d.get("flight")}\n`;
+      text+=`Flight time: ${d.get("flight_time")}\n`;
+      if(d.get("trip_type")==="Round Trip"){
+        text+=`Return date: ${d.get("return_date")}\n`;
+        text+=`Return flight: ${d.get("return_flight")}\n`;
+        text+=`Return flight time: ${d.get("return_flight_time")}\n`;
+      }
       text+=`Hotel: ${d.get("hotel")}\n`;
       text+=`Total Passengers: ${d.get("passengers")}\n`;
       text+=`Payment: Cash to the driver (EUR / USD / TRY)\n\n`;

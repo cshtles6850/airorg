@@ -1,0 +1,3 @@
+HTML checked: 18
+Issues after fixes: 0
+No static QA issues found.
