@@ -27,7 +27,7 @@
 <div class="feature"><strong>24-hour free cancellation</strong><span>Cancel free of charge up to 24 hours before the transfer.</span></div>
 <div class="feature"><strong>Cash payment only</strong><span>Pay the driver in EUR, USD or TRY. No card payment.</span></div>
 <div class="feature"><strong>Flight delay tracking</strong><span>Correct flight code entered in the booking is monitored at no extra delay waiting charge.</span></div>
-</div><form id="full-booking" class="booking-card" style="margin-top:20px">
+</div><form id="full-booking" data-email-integration="pending" class="booking-card" style="margin-top:20px">
   <div class="fields">
     <div class="field full">
       <label>TRIP TYPE</label>
@@ -69,16 +69,12 @@
       <label>FLIGHT CODE</label>
       <input name="flight" placeholder="e.g. TK2010" required>
     </div>
-    <div class="field">
-      <label>FLIGHT TIME</label>
-      <input name="flight_time" type="time" required>
-    </div>
     <div class="field full">
       <label>HOTEL / ACCOMMODATION</label>
       <input name="hotel" placeholder="Full hotel or property name" required>
     </div>
     <div id="return-fields" class="field full" hidden>
-      <div class="fields"><div class="field"><label>RETURN DATE</label><input name="return_date" type="date"></div><div class="field"><label>RETURN FLIGHT CODE</label><input name="return_flight" placeholder="e.g. TK2011"></div><div class="field"><label>RETURN FLIGHT TIME</label><input name="return_flight_time" type="time"></div></div>
+      <div class="fields"><div class="field"><label>RETURN DATE</label><input name="return_date" type="date"></div><div class="field"><label>RETURN FLIGHT CODE</label><input name="return_flight" placeholder="e.g. TK2011"></div></div>
     </div>
     <div class="field">
       <label>PASSENGERS</label>

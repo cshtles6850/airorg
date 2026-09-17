@@ -1,0 +1,4 @@
+V11 double audit
+Audit 1: PASS
+Audit 2: PASS
+Checked: HTML structure, canonical/meta/H1, JSON-LD validity, duplicate IDs, broken internal references, JS syntax, flight-time removal, route intro duplication, visible price repetition, route article sentence duplication, route article near-duplicate similarity, Privacy/About/Contact/Terms coverage, booking fields, forbidden/stale wording.
