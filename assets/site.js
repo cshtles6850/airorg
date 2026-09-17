@@ -51,6 +51,21 @@
     passengerCount.addEventListener("change",renderPassengers);
     renderPassengers();
 
+    const continueBtn=qs("#continue-booking");
+    const passengerStep=qs("#passenger-step");
+    if(continueBtn && passengerStep){
+      continueBtn.addEventListener("click",()=>{
+        const requiredBefore=["service","direction","destination","date","flight","hotel","passengers"];
+        for(const name of requiredBefore){
+          const el=full.elements[name];
+          if(el && !el.checkValidity()){ el.reportValidity(); return; }
+        }
+        passengerStep.hidden=false;
+        continueBtn.hidden=true;
+        passengerStep.scrollIntoView({behavior:"smooth",block:"start"});
+      });
+    }
+
     full.addEventListener("submit",e=>{
       e.preventDefault();
       if(!full.reportValidity()) return;
@@ -61,7 +76,8 @@
       text+=`Date: ${d.get("date")}\n`;
       text+=`Flight: ${d.get("flight")}\n`;
       text+=`Hotel: ${d.get("hotel")}\n`;
-      text+=`Total Passengers: ${d.get("passengers")}\n\n`;
+      text+=`Total Passengers: ${d.get("passengers")}\n`;
+      text+=`Payment: Cash to the driver (EUR / USD / TRY)\n\n`;
       for(let i=1;i<=parseInt(d.get("passengers"),10);i++){
         text+=`Passenger ${i}\nName and Surname: ${d.get("passenger_name_"+i)}\nPassport No: ${d.get("passport_"+i)}\n\n`;
       }

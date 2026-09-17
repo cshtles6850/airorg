@@ -21,4 +21,3 @@ WhatsApp: +90 545 932 00 50
 
 ## Important
 No street address was added to structured data because no verified street address was supplied.
-Cancellation, no-show, child-seat and special-baggage rules are not invented; Terms directs travellers to confirm these when relevant.

@@ -22,7 +22,7 @@
 </div></header>
 <main><section class="section"><div class="wrap"><div class="full-booking">
 <div class="eyebrow">Booking request</div><h1 style="font-size:48px">Book Your Kayseri Airport Transfer</h1><p class="lead">Complete the details below. When you submit the form, your booking request opens in WhatsApp ready to send to our team.</p>
-<div class="notice">Passenger names and passport numbers are required for the reservation and airport transfer reporting process. They are included only in the booking request you send to the transfer team.</div>
+<div class="notice">Step 1 asks only for transfer details. Passenger names and passport numbers are requested in Step 2 because they are required for the reservation and airport transfer reporting process.</div>
 <form id="full-booking" class="booking-card" style="margin-top:20px">
 <div class="fields">
 <div class="field full"><label>TRANSFER OPTION</label><select name="service" required>
@@ -37,11 +37,17 @@
 <div class="field"><label>FLIGHT CODE</label><input name="flight" placeholder="e.g. TK2010" required></div>
 <div class="field full"><label>HOTEL / ACCOMMODATION</label><input name="hotel" placeholder="Full hotel or property name" required></div>
 <div class="field"><label>PASSENGERS</label><select id="passengers" name="passengers"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option></select></div>
-<div class="field"><label>PAYMENT</label><input value="Confirm with transfer team" readonly></div>
+<div class="field"><label>PAYMENT</label><input value="Cash to driver — EUR / USD / TRY" readonly></div>
 </div>
+<div class="field full"><div class="notice">Payment is cash to the driver. EUR, USD and TRY are accepted. Card payment is not available. Free cancellation is available up to 24 hours before the transfer.</div></div>
+</div>
+<button id="continue-booking" class="primary" type="button" style="width:100%;margin-top:14px">Continue to passenger details →</button>
+<div id="passenger-step" hidden style="margin-top:22px">
+<div class="notice"><strong>Passenger details</strong><br>Passport information is requested only at this stage for reservation and airport transfer reporting.</div>
 <div id="passenger-fields"></div>
 <div class="field" style="margin-top:12px"><label>NOTES (OPTIONAL)</label><textarea name="notes" placeholder="Luggage, arrival notes or another important detail"></textarea></div>
 <button class="primary" type="submit" style="width:100%;margin-top:14px">Send Booking Request by WhatsApp →</button>
+</div>
 <div class="form-note">WhatsApp: +90 545 932 00 50</div>
 </form></div></div></section></main>
 <footer><div class="wrap">
