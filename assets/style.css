@@ -29,6 +29,11 @@ header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0
 .hero{background:linear-gradient(180deg,#fff 0%,#fdfbf7 100%);padding:34px 0 28px;position:relative;overflow:hidden}
 .hero:after{content:"";position:absolute;right:-50px;bottom:-25px;width:540px;height:250px;background:url('/assets/cappadocia-line.svg') right bottom/contain no-repeat;opacity:.65;pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:34px;position:relative;z-index:2}
+.hero-visual-card{background:linear-gradient(180deg,#fff 0%,#f8f4ec 100%);border:1px solid var(--line);border-radius:22px;padding:24px 24px 12px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:100%}
+.hero-copy{position:relative;z-index:2}
+.hero-title{font-size:clamp(30px,3.7vw,50px);line-height:1.03;max-width:540px}
+.hero-fleet{margin-top:18px;display:flex;justify-content:center;align-items:flex-end;min-height:220px}
+.hero-fleet img{width:100%;max-width:620px;height:auto;display:block;filter:drop-shadow(0 18px 30px rgba(13,43,75,.14))}
 .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);font-weight:850;margin-bottom:10px}
 h1,h2,h3{font-family:Georgia,serif}
 h1{font-size:clamp(40px,5vw,62px);line-height:1.02;letter-spacing:-.035em;margin:0;max-width:650px}
@@ -147,6 +152,9 @@ footer p{color:#aebdc9;font-size:12px;line-height:1.6}
   .navlinks.open .nav-book{text-align:center;margin-top:4px}
   .menu{display:block}
   .hero-grid,.route-layout,.content-grid{grid-template-columns:1fr}
+  .hero-visual-card{padding:20px 18px 10px}
+  .hero-fleet{min-height:0;margin-top:12px}
+  .hero-fleet img{max-width:100%}
   .hero:after{opacity:.28}
   .route-grid{grid-template-columns:repeat(3,1fr)}
   .why-grid{grid-template-columns:1fr 1fr}
@@ -160,7 +168,7 @@ footer p{color:#aebdc9;font-size:12px;line-height:1.6}
   .topbar{display:none}.wrap{width:min(100% - 24px,600px)}
   .nav{height:70px}.brand strong{font-size:16px}.brand img{width:42px;height:42px}
   .hero{padding:22px 0 18px}.hero-grid{gap:17px}
-  h1{font-size:39px}.lead{font-size:15px}
+  h1{font-size:39px}.hero-title{font-size:clamp(26px,8vw,36px)}.lead{font-size:15px}
   .trust-inline{gap:12px}.trust-item{font-size:12px}.icon-ring{width:36px;height:36px}
   .booking-card{padding:17px}.booking-card h2{font-size:24px}
   .fields{grid-template-columns:1fr}.field.full{grid-column:auto}
@@ -220,3 +228,5 @@ footer p{color:#aebdc9;font-size:12px;line-height:1.6}
 
 #passenger-step[hidden]{display:none}
 #passenger-step{border-top:1px solid var(--line);padding-top:20px}
+
+.premium-trust{padding-top:28px;padding-bottom:34px}.premium-trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.premium-trust-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 10px 28px rgba(13,43,75,.06)}.premium-trust-card h3{font-size:20px;margin:0 0 8px}.premium-trust-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}@media(max-width:980px){.premium-trust-grid{grid-template-columns:1fr 1fr}}@media(max-width:640px){.premium-trust-grid{grid-template-columns:1fr}}
