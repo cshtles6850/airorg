@@ -56,7 +56,7 @@
       if(!full.reportValidity()) return;
       const d=new FormData(full);
       let text=`Booking request\n\n`;
-      text+=`Direction: ${d.get("direction")}\n`;
+      text+=`Transfer option: ${d.get("service")}\n`;\n      text+=`Direction: ${d.get("direction")}\n`;
       text+=`Route: Kayseri Airport (ASR) ↔ ${d.get("destination")}\n`;
       text+=`Date: ${d.get("date")}\n`;
       text+=`Flight: ${d.get("flight")}\n`;

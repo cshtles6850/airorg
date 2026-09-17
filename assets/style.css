@@ -211,3 +211,9 @@ footer p{color:#aebdc9;font-size:12px;line-height:1.6}
 .route-main .prose h2:first-child{
   margin-top:0;
 }
+
+.route-faq{margin-top:34px}
+.route-faq h2{margin-bottom:14px}
+.trust-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.trust-strip .feature{background:#fffdf9}
+@media(max-width:640px){.trust-strip{grid-template-columns:1fr}}
