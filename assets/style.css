@@ -177,3 +177,37 @@ footer p{color:#aebdc9;font-size:12px;line-height:1.6}
   body{padding-bottom:64px}
   .blog-grid{grid-template-columns:1fr}
 }
+
+
+.whatsapp-btn{
+  display:inline-flex;
+  width:auto;
+  min-height:42px;
+  padding:0 13px;
+  margin-top:9px;
+  border-radius:9px;
+  gap:7px;
+}
+.whatsapp-btn svg{
+  width:18px!important;
+  height:18px!important;
+  max-width:18px!important;
+  flex:0 0 18px;
+}
+.contact-box .phone-link{
+  text-align:left;
+  margin-top:8px;
+  font-size:12px;
+}
+.route-layout{
+  align-items:start;
+}
+.route-main{
+  min-width:0;
+}
+.route-main .prose{
+  margin-top:34px;
+}
+.route-main .prose h2:first-child{
+  margin-top:0;
+}
