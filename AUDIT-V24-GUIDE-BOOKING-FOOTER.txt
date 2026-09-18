@@ -1,0 +1,34 @@
+V24 guide booking + footer layout fix
+
+1. All Transfer Guides pages now have the same quick booking form in the right sidebar:
+- Shared vs Private
+- Cave Hotel Guide
+- Arrival Meeting Point
+- Travel Time Guide
+- Airport Choice Guide
+- Group Private Transfer
+- Istanbul via ASR
+
+The sidebar form includes:
+- Transfer direction
+- Destination
+- Transfer date
+- Passengers
+- Check transfer options CTA
+The form continues to the existing /booking/ page via the existing site.js quick-form logic.
+
+2. Footer layout rebuilt:
+- Removed the separate out-of-wrap Transfer Guides strip.
+- Transfer Guides is now a proper footer-grid column.
+- It sits directly beside Information.
+- Desktop: integrated five-column layout.
+- Tablet: adaptive multi-column layout.
+- Mobile: clean single-column stack.
+- Removed separator dots that were wrapping into separate lines on mobile.
+
+3. Validation passes:
+PASS 1 — all guide booking forms present and complete.
+PASS 2 — footer integrated correctly on every HTML page.
+PASS 3 — H1/title/JSON-LD/internal links/JS/sitemap/quick-form behavior checked.
+
+Final issues in these checks: 0

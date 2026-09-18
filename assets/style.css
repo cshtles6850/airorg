@@ -126,7 +126,7 @@ input:focus,select:focus,textarea:focus{border-color:#97a9b9;box-shadow:0 0 0 3p
 .article-card h3{font-size:19px;margin:0 0 8px}
 .article-card p{color:var(--muted);font-size:13px}
 footer{background:#0c243d;color:#dce5ec;padding:34px 0 26px}
-.footer-grid{display:grid;grid-template-columns:1.3fr .8fr .8fr 1fr;gap:28px}
+.footer-grid{display:grid;grid-template-columns:1.35fr .9fr .9fr 1fr;gap:28px;align-items:start}
 .footer-brand{display:flex;gap:11px}
 .footer-brand img{width:48px;height:48px}
 footer h3{font-family:Inter,sans-serif;font-size:13px;margin:0 0 10px;color:#fff}
@@ -280,8 +280,7 @@ footer p{color:#aebdc9;font-size:12px;line-height:1.6}
 .route-guide-links{margin:28px 0;padding:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .route-guide-links h2{margin-top:0}
 .route-guide-links ul{margin-bottom:0}
-.footer-guides{max-width:1100px;margin:18px auto 0;padding:12px 24px 0;border-top:1px solid rgba(255,255,255,.12);font-size:12px;line-height:1.8}
-.footer-guides a{color:inherit}
+
 .expanded-comparison{margin-top:28px}
 @media(max-width:980px){.guide-link-grid{grid-template-columns:1fr}}
 
@@ -305,3 +304,28 @@ footer p{color:#aebdc9;font-size:12px;line-height:1.6}
 @media(max-width:640px){.guide-link-grid-six{grid-template-columns:1fr}.coverage-map-card{padding:17px}}
 
 .content-provenance{margin-top:14px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+
+
+.guide-page .content-grid{align-items:start}
+.content-grid>.sidebar{min-width:0}
+.sidebar .booking-card{padding:18px}
+.sidebar .booking-card h2{font-size:24px}
+.sidebar .booking-card .fields{grid-template-columns:1fr}
+.sidebar .booking-card .field.full{grid-column:auto}
+.sidebar .booking-card input,.sidebar .booking-card select{height:46px}
+.sidebar .booking-card .primary{min-height:50px}
+.footer-guide-column a{display:block}
+@media(max-width:1180px){
+  .footer-grid{grid-template-columns:1.25fr 1fr 1fr 1fr}
+  .footer-guide-column{grid-column:auto}
+}
+@media(max-width:980px){
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .footer-grid{grid-template-columns:1fr;gap:22px}
+  footer{padding:28px 0 92px}
+  .legal{margin-top:20px;padding-top:16px;display:block}
+  .legal span{display:block;margin-top:6px}
+  .footer-guide-column{margin-top:0}
+}
