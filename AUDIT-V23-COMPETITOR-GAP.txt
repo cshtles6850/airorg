@@ -1,0 +1,104 @@
+V23 — Competitor-gap closure for kayseriairporttocappadocia.com
+
+Competitor reviewed: cappadociashuttletransfer.com
+Scope: English, Kayseri Airport (ASR)-focused commercial site.
+Deliberate constraints preserved:
+- No Nevşehir commercial transfer service.
+- No separate reverse-route URLs.
+- No taxi positioning.
+- Fixed prices unchanged.
+- Booking remains Kayseri Airport focused.
+- Home H1 remains semantic and visually 20px.
+
+What was added or improved
+
+1. Istanbul → Kayseri Airport → Cappadocia planning intent
+New page:
+  /istanbul-to-cappadocia-via-kayseri-airport/
+Covers IST/SAW → ASR flight planning, arrival process, transfer choice,
+route times, return planning and exact ASR transfer prices.
+Includes FAQPage schema.
+
+2. Home service coverage
+Added a lightweight inline SVG coverage schematic for:
+Kayseri Airport (ASR) → Göreme, Ürgüp, Uçhisar, Avanos, Çavuşin, Ortahisar.
+No external map library or heavy map embed.
+Diagram is explicitly marked not to scale.
+
+3. Home planning layer
+Added:
+- Istanbul via ASR guide
+- Shared vs private guide
+- Cave-hotel access guide
+- Arrival meeting-point guide
+- Travel-time comparison
+- Neutral airport-choice guide
+- Group private-transfer guide
+Old duplicate home guide/trust blocks were removed to avoid repetition.
+
+4. ASR vs airport-choice guide
+Strengthened /kayseri-or-nevsehir-airport-for-cappadocia/ with:
+- ASR route table for all six destinations
+- destination-specific arrival considerations
+- decision scenarios
+- explicit neutral framing
+- explicit statement that this site sells ASR transfers only
+- official DHMI references
+- FAQPage schema
+
+5. Operator verification
+About page now includes:
+- Ekwo Travel
+- TURSAB 7896
+- external TURSAB regional agency-list reference
+- Kayseri-only website scope
+- content information owner
+- last English content review date
+
+6. Existing commercial advantages preserved
+The site continues to show information that the competitor does not publish as clearly:
+- Shared €15/person
+- Vito €90/way, up to 5
+- Sprinter €110/way, up to 16
+- group-cost examples
+- luggage decision support
+- shared hotel-stop implications
+- return pickup calculation
+- cash EUR/USD/TRY
+- card unavailable
+- free cancellation up to 24 hours
+
+7. Real-operation photo comparison
+No new fake meet-and-greet or hotel-drop image was created.
+Competitor does not provide a verified real operational photo advantage that needs copying.
+Existing fleet visual remains in use.
+
+Five audit passes
+
+PASS 1 — Technical
+Title/H1/meta/canonical, JSON-LD, duplicate IDs, internal links,
+JavaScript syntax and sitemap XML.
+
+PASS 2 — Competitor-gap coverage
+Home coverage schematic, Istanbul guide, airport-choice depth,
+operator verification and planning-guide network.
+
+PASS 3 — Content superiority / repetition
+Private-price transparency, group-cost depth, luggage/hotel-stop guidance,
+unique support-page titles/meta and support-page similarity.
+
+PASS 4 — Linking / indexing / schema
+All support pages internally linked, sitemap inclusion, FAQ/schema sync,
+blog remains noindex, no reverse-route URLs.
+
+PASS 5 — Scope / consistency
+Kayseri-only commercial scope, route values, H1 20px rule,
+no stale Avanos values, no taxi, no drop-off wording,
+no flight-time form fields, no /en residue, JS/XML final checks.
+
+Final issues in these checks: 0
+
+Deliberate language note:
+A partial Chinese locale was not created merely to imitate the competitor's /zh page.
+This project requires complete, careful translations rather than a thin or partly-English locale.
+A multilingual rollout should be handled as a separate full-language QA phase.
