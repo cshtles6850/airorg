@@ -1,0 +1,5 @@
+V34 background illustration update
+- Replaced rough line-drawing fairy chimney background with improved Cappadocia illustration.
+- Updated home/hero decorative background.
+- Updated route-card mini illustration used across destination cards.
+- Shared CSS asset updated globally through assets/style.css.
