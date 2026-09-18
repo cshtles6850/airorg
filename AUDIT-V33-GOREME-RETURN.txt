@@ -1,0 +1,88 @@
+V33 intent consolidation + Göreme return-route test
+
+Changes
+
+1. Removed duplicate-intent blog page
+Deleted completely:
+- /blog/shared-shuttle-or-private-transfer/
+
+No redirect was added because the site is not live yet.
+All internal links to the deleted URL were removed.
+The blog index card was removed.
+The deleted URL was removed from sitemap.
+
+The canonical shared/private comparison remains:
+- /shared-shuttle-vs-private-transfer/
+
+2. Added exactly one reverse-route test page
+New:
+- /goreme-to-kayseri-airport-transfer/
+
+No reverse pages were created for:
+- Ürgüp
+- Uçhisar
+- Avanos
+- Çavuşin
+- Ortahisar
+
+The optional generic return hub was NOT created yet:
+- /cappadocia-to-kayseri-airport-transfer/
+
+3. Göreme return page is departure-specific, not reversed arrival copy
+Focus areas:
+- flight-based pickup calculation
+- work backwards from departure flight
+- direct road time around 70–80 minutes
+- shared multi-hotel pickup sequence
+- cave-hotel checkout / reception access
+- early-flight preparation
+- airline check-in and baggage deadline buffer
+- hotel vehicle-access limitation
+- shared vs private return choice
+- required flight/hotel/passenger/luggage details
+
+4. Internal linking
+Arrival page:
+- /kayseri-airport-to-goreme/
+links strongly to:
+- /goreme-to-kayseri-airport-transfer/
+
+Return page links back to:
+- /kayseri-airport-to-goreme/
+as the arrival version.
+
+Relevant timing/early-flight guides also link to the return page.
+
+5. Booking
+Return page sidebar defaults:
+- Direction: To Kayseri Airport
+- Destination: Göreme
+
+6. SEO
+Return title:
+Göreme to Kayseri Airport Transfer | Hotel Pickup to ASR
+
+Return H1:
+Göreme to Kayseri Airport Transfer
+
+Self-canonical and og:url use the production URL.
+BreadcrumbList and FAQPage JSON-LD included.
+
+QA
+PASS:
+- deleted duplicate blog absent
+- no redirect for deleted blog
+- only one reverse-route destination page exists
+- optional return hub not created
+- return-specific content present
+- arrival ↔ return internal linking
+- booking defaults correct
+- FAQ visible/schema synchronized
+- sitemap updated
+- internal links checked
+- JSON-LD parsed
+- site.js syntax passed
+- sitemap XML passed
+- all sitemap URLs returned local HTTP 200
+
+Final issues in these checks: 0
