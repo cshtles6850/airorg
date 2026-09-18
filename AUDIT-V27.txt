@@ -1,0 +1,19 @@
+V27 cleanup
+
+Changes:
+- Removed airorg.vercel.app -> production redirect.
+- Removed www -> apex redirect from vercel.json.
+- Removed official TURSAB external/PDF link from About.
+- Kept TURSAB No. 7896 as plain operator information.
+- Blog remains noindex.
+- Blog remains excluded from sitemap.
+
+Validation:
+- vercel.json parses and contains no redirect rules.
+- No tursab.org.tr link remains in About.
+- Blog noindex checked.
+- Blog excluded from sitemap.
+- site.js syntax checked.
+- sitemap.xml parsed successfully.
+
+Final issues in these checks: 0

@@ -1,0 +1,36 @@
+V28 blog rewrite and indexing audit
+
+Rewritten for clarity and user usefulness:
+- /blog/how-early-to-leave-goreme-for-kayseri-airport/
+- /blog/kayseri-airport-transfer-for-early-flights/
+- /blog/shared-shuttle-or-private-transfer/
+- /blog/ index page
+
+Editorial approach:
+- Practical traveller questions first.
+- Shorter sentences and varied paragraph rhythm.
+- Real route values and published prices only.
+- No invented experiences, reviews, ratings or customer quotes.
+- Scenario-based explanations instead of keyword repetition.
+- Contextual links to routes, booking and detailed transfer guides.
+
+Indexing:
+- noindex removed from blog index and all three posts.
+- Blog index and posts added to sitemap.
+- Footer Information column links to Transfer Blog.
+
+SEO:
+- Unique title, meta description and H1 per blog page.
+- Self-canonical and og:url use production domain.
+- BlogPosting schema added to posts.
+- BreadcrumbList added to posts.
+- Internal links checked.
+
+QA:
+- All three posts exceed 450 words.
+- Each post links to a route, booking and a relevant guide.
+- All sitemap URLs passed local HTTP 200 smoke testing.
+- site.js syntax passed.
+- sitemap XML passed.
+
+Final issues in these checks: 0

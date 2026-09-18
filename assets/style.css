@@ -329,3 +329,13 @@ footer p{color:#aebdc9;font-size:12px;line-height:1.6}
   .legal span{display:block;margin-top:6px}
   .footer-guide-column{margin-top:0}
 }
+
+.booking-path-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.guide-next-links{margin:30px 0;padding:20px;border:1px solid var(--line);border-radius:14px;background:#fbfaf7}
+.guide-next-links h2{margin-top:0}
+.guide-next-links li{margin:8px 0}
+@media(max-width:760px){.booking-path-grid{grid-template-columns:1fr}}
+
+.keyword-price-heading{margin-bottom:18px}
+.keyword-price-heading h2{margin-bottom:0}
+.asr-search-note{font-size:13px}

@@ -1,0 +1,23 @@
+V29 exact-keyword alignment
+
+Target phrases supplied by the site owner
+1. kayseri airport to cappadocia — volume 40, KD 11
+2. asr airport to cappadocia — volume 70, KD 22
+3. kayseri airport shuttle — volume 30, KD 13
+
+Before V29
+- 'kayseri airport to cappadocia': already strongly present, including homepage title, meta and H1.
+- 'asr airport to cappadocia': 0 exact occurrences.
+- 'kayseri airport shuttle': 0 exact occurrences.
+
+Changes
+- Preserved the homepage H1: Kayseri Airport to Cappadocia Shuttle & Private Transfer.
+- Homepage meta now includes the exact natural phrase 'Kayseri Airport shuttle'.
+- Added visible H2: 'Kayseri Airport Shuttle & Private Transfer Prices'.
+- Added one explanatory homepage sentence clarifying that ASR is Kayseri Airport and naturally using 'ASR Airport to Cappadocia'.
+- Arrival-meeting guide meta and explanatory body text now use the ASR search phrase naturally.
+- Shared-vs-private guide meta now uses 'Kayseri Airport shuttle'.
+- No new thin landing page or duplicate general hub was created.
+- Exact phrases were intentionally not repeated across every page to avoid keyword stuffing.
+
+QA: PASS
