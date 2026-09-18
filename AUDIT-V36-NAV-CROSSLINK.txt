@@ -1,0 +1,20 @@
+V36 Airorg → Nevşehir Airport Shuttle contextual cross-link
+
+Changed page only:
+- /kayseri-or-nevsehir-airport-for-cappadocia/
+
+Added contextual paragraph inside the existing “If you land at NAV” scenario.
+Target: https://cappadociaairportshuttle.com/nevsehir-airport-shuttle
+Anchor: Nevşehir Airport shuttle options
+Normal same-tab HTML link. No nofollow, sponsored, ugc or target=_blank.
+Airorg NAV scope preserved: Airorg does not provide the NAV transfer.
+Ownership wording uses “our” because both sites belong to the same operator.
+
+QA PASS:
+- Link appears on exactly one Airorg page
+- No header/footer/sitewide insertion
+- Protected title/meta/canonical/Open Graph/JSON-LD unchanged
+- Sitemap unchanged; no external URL added
+- Local link check passed
+- JSON-LD parse passed
+- site.js syntax passed
