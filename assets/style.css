@@ -27,7 +27,7 @@ header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0
 .lang{padding:9px 11px;border:1px solid var(--line);border-radius:9px;background:#fff}
 .menu{display:none;border:1px solid var(--line);background:#fff;border-radius:10px;width:44px;height:44px;font-size:22px}
 .hero{background:linear-gradient(180deg,#fff 0%,#fdfbf7 100%);padding:34px 0 28px;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;right:-8px;bottom:-12px;width:min(46vw,560px);height:235px;background:url('cappadocia-hero-right.webp') right bottom/contain no-repeat;opacity:.78;pointer-events:none}
+.hero:after{content:"";position:absolute;right:-8px;bottom:-12px;width:min(46vw,560px);height:235px;background:url('cappadocia-hero-right.webp') right bottom/contain no-repeat;opacity:.88;pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:34px;position:relative;z-index:2;align-items:start}
 .hero-visual-card{background:linear-gradient(180deg,#fff 0%,#f8f4ec 100%);border:1px solid var(--line);border-radius:22px;padding:22px 24px 10px;box-shadow:var(--shadow);display:flex;flex-direction:column}
 .hero-copy{position:relative;z-index:2}
@@ -75,7 +75,7 @@ input:focus,select:focus,textarea:focus{border-color:#97a9b9;box-shadow:0 0 0 3p
 .route-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
 .route-card{border:1px solid var(--line);border-radius:13px;background:#fff;padding:15px;transition:.18s}
 .route-card:hover{transform:translateY(-2px);box-shadow:0 9px 22px rgba(13,43,75,.07)}
-.route-symbol{height:62px;border-radius:10px;background:#fbf8f1 url('cappadocia-fairy-chimneys-card.webp') center/contain no-repeat;margin-bottom:11px;opacity:.95;border:1px solid #f0e7d7}
+.route-symbol{height:62px;border-radius:10px;background:#fbf8f1 url('cappadocia-fairy-chimneys-card.webp') center/contain no-repeat;margin-bottom:11px;opacity:1;border:1px solid #ead9ba}
 .route-card h3{font-size:17px;margin:0}
 .route-meta{display:flex;gap:8px;color:#687582;font-size:11px;font-weight:750;margin:8px 0 11px}
 .route-card .primary{min-height:38px;font-size:12px}

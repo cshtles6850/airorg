@@ -1,0 +1,9 @@
+V37 visual contrast + Avanos card alignment
+
+- Homepage Avanos card time shortened from "around 60–70 minutes" to "60–70 min" to prevent card height/alignment shift.
+- Hero Cappadocia illustration linework darkened slightly and CSS visibility increased.
+- Route-card Cappadocia illustration linework darkened slightly and border contrast increased.
+- V36 NAV contextual cross-link preserved only on /kayseri-or-nevsehir-airport-for-cappadocia/.
+- No noindex found.
+- Sitemap remains 24 URLs.
+- site.js syntax check passed.
