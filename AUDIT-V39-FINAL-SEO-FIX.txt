@@ -1,0 +1,83 @@
+V39 FINAL SEO FIX — 2026-09-19
+
+Implemented
+
+1) /kayseri-airport-to-goreme/
+Added one contextual NAV alternative:
+https://cappadociaairportshuttle.com/nevsehir-airport-to-goreme-shuttle
+Anchor:
+Nevşehir Airport to Göreme shuttle option
+
+2) /goreme-to-kayseri-airport-transfer/
+Added one contextual NAV return alternative:
+https://cappadociaairportshuttle.com/goreme-to-nevsehir-airport-shuttle
+Anchor:
+Göreme to Nevşehir Airport shuttle option
+
+3) /kayseri-or-nevsehir-airport-for-cappadocia/
+Preserved the existing general NAV service link:
+https://cappadociaairportshuttle.com/nevsehir-airport-shuttle
+Anchor:
+Nevşehir Airport shuttle options
+
+All three links:
+- appear only on their intended page
+- are real HTML <a href> links
+- open in the same tab
+- have no nofollow/sponsored/ugc
+- are not in header/footer/sitewide navigation
+
+4) Shared/private cannibalization
+Removed physical duplicate page:
+ /blog/shared-shuttle-or-private-transfer/
+
+Configured 301:
+ /blog/shared-shuttle-or-private-transfer/
+ ->
+ /shared-shuttle-vs-private-transfer/
+
+Old URL removed from sitemap.
+Old internal links removed/updated.
+
+5) Staging -> production
+Configured host-specific 301:
+ airorg.vercel.app/:path*
+ ->
+ https://kayseriairporttocappadocia.com/:path*
+
+This becomes active only after this build/config is deployed to the Vercel project.
+
+6) Internal linking
+Verified:
+- each remaining blog post -> relevant Göreme route
+- each remaining blog post -> booking
+- each remaining blog post -> shared/private comparison
+- each remaining blog post -> Göreme return transfer
+- travel-time guide -> all six route pages
+- homepage -> all six route pages
+- homepage -> planning guides in body content
+
+7) Production-readiness
+Verified in static source:
+- self canonicals use production domain
+- og:url uses production domain
+- JSON-LD contains no airorg.vercel.app URLs
+- sitemap contains only production-domain URLs
+- robots.txt points to production sitemap
+- no noindex meta tags found
+
+8) QA
+PASS:
+- internal link check
+- JSON-LD parse
+- site.js syntax
+- sitemap XML parse
+- sitemap local HTTP smoke: 24/24 = 200
+- protected title/meta/canonical/OG/JSON-LD on the three edited NAV pages unchanged
+- sitemap URL count: 24
+
+External target verification:
+The three Cappadocia Airport Shuttle target pages were fetched successfully and their visible content matches the intended NAV/Göreme transfer service.
+
+Important deployment note:
+The currently live airorg.vercel.app copy will not change until this V39 package is deployed. That is why the old blog URL can still be visible on the currently deployed staging build.

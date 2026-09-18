@@ -1,0 +1,22 @@
+V40 — fresh deployment / no redirect rules
+
+Changes from V39:
+- Removed ALL Vercel redirect rules.
+- No airorg.vercel.app -> production redirect.
+- No /blog/shared-shuttle-or-private-transfer/ -> comparison redirect.
+- The duplicate blog page remains physically deleted.
+- The deleted blog URL remains excluded from sitemap.
+- Internal links continue to point to /shared-shuttle-vs-private-transfer/.
+- NAV contextual cross-links from V39 are retained.
+- Canonical/OG/JSON-LD production-domain preparation remains unchanged.
+
+Reason:
+This build is intended for a new Vercel project/domain deployment. The previous airorg.vercel.app project is not part of the production migration and the deleted blog URL will never be deployed on the new site.
+
+QA:
+PASS - no redirects in vercel.json
+PASS - duplicate blog directory absent
+PASS - no internal links to deleted blog URL
+PASS - deleted blog URL absent from sitemap
+PASS - site.js syntax
+PASS - sitemap XML
