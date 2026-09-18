@@ -1,0 +1,4 @@
+V35 hero visual update
+- Home hero decorative illustration changed to right-heavy fairy chimneys + balloons version.
+- Route-card decorative illustration kept as horizontal fairy-chimney version.
+- Updated CSS .hero:after to use cappadocia-hero-right.webp.
