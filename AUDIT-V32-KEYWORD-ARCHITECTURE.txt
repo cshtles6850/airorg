@@ -1,0 +1,81 @@
+V32 Full English keyword architecture
+
+Primary commercial URL
+/
+Primary target:
+- kayseri airport to cappadocia
+
+Commercial secondary targets:
+- cappadocia airport transfer
+- kayseri airport shuttle
+- asr airport to cappadocia
+
+Long-tail / supporting intent:
+- kayseri airport to cappadocia turkey
+- kayseri to cappadocia
+- kayseri to cappadocia turkey
+- cappadocia transfers
+
+Entity support:
+- Kayseri Airport
+- Kayseri Airport (ASR)
+- Kayseri Erkilet Airport
+
+URL assignment strategy
+
+Homepage
+- Owns the main commercial topic.
+- H1 remains: Kayseri Airport to Cappadocia Shuttle & Private Transfer.
+- Meta now combines the primary phrase with Cappadocia airport transfer.
+- Added a short airport-transfer-scope section using the Turkey long-tail and broader Kayseri-to-Cappadocia wording naturally.
+- Explicitly states the service starts at Kayseri Airport, not Kayseri city centre.
+- Explicitly states that references to Cappadocia transfers mean airport transfers, not sightseeing or town-to-town service.
+- ASR / Kayseri Erkilet Airport entity relationship retained and clarified.
+- No new generic hub page created.
+
+Travel-time guide
+/kayseri-airport-to-cappadocia-travel-time/
+- Supports broader 'kayseri to cappadocia' informational intent.
+- Clearly states the guide covers Kayseri Airport, not Kayseri city-centre pickup.
+
+Shared vs Private guide
+/shared-shuttle-vs-private-transfer/
+- Supports 'kayseri airport shuttle', 'cappadocia airport transfer' and broader 'cappadocia transfers' semantics.
+- Explicitly limits the service scope to airport transfers.
+
+Istanbul via ASR guide
+/istanbul-to-cappadocia-via-kayseri-airport/
+- Uses the Kayseri-to-Cappadocia-Turkey long-tail in the context of the ground leg after landing at ASR.
+
+FAQ
+- Added a clear question explaining that Kayseri city-centre to Cappadocia transfer is not offered.
+- FAQPage schema rebuilt to match visible answers.
+
+Route pages
+- Kept destination-specific intent unchanged.
+- Shared prices and booking sidebars preserved.
+- Uçhisar: elevation / steep access.
+- Avanos: actual-town verification.
+- Çavuşin: old/new village access.
+- Ortahisar: local streets / hotel access.
+- No broad generic phrases forced into route titles or H1s.
+
+Blog
+- Remains indexable.
+- Blog index and three posts remain in sitemap.
+
+QA
+PASS:
+- Keyword architecture and scope
+- No new generic hub
+- Six route values/prices/forms
+- Destination-specific differentiation
+- Blog indexing
+- Canonicals / OG URLs
+- JSON-LD parsing
+- Internal links
+- site.js syntax
+- sitemap XML
+- 24/24 sitemap URLs local HTTP 200 smoke test
+
+Final issues in these checks: 0

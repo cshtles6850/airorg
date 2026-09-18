@@ -1,0 +1,25 @@
+V30 Erkilet supporting-term update
+
+Added the supporting term "Erkilet Airport" naturally in exactly two strategic places:
+
+1. Homepage
+   Kayseri Airport (ASR) is also commonly referred to as Erkilet Airport.
+   Clarifies that both names refer to the same airport used by the site.
+
+2. Kayseri Airport Arrival Meeting Point guide
+   Explains that older travel information, local references or hotel messages may use Erkilet Airport.
+
+SEO handling:
+- Erkilet was NOT added to page titles.
+- Erkilet was NOT added to H1 headings.
+- Erkilet was NOT forced into meta descriptions.
+- No new landing page was created.
+- The term is used only as a natural supporting synonym/legacy-local reference.
+
+Validation:
+- JSON-LD parse: PASS
+- site.js syntax: PASS
+- sitemap.xml parse: PASS
+- Erkilet placement scope: PASS
+
+Final issues in these checks: 0

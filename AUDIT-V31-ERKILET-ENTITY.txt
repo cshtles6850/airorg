@@ -1,0 +1,21 @@
+V31 Kayseri Erkilet Airport entity strengthening
+
+Updated exactly three strategic pages:
+1. Homepage
+   Kayseri Airport (ASR), also known as Kayseri Erkilet Airport...
+2. Kayseri Airport Arrival Meeting Point guide
+   Clarifies Kayseri Airport (ASR) and Kayseri Erkilet Airport are the same airport.
+3. About
+   Service scope now identifies Kayseri Airport (ASR) / Kayseri Erkilet Airport once.
+
+Intent:
+- Strengthen entity association without turning "Kayseri Erkilet Airport" into the commercial primary keyword.
+- No new landing page.
+- No title/H1/meta stuffing.
+- Route pages remain destination-focused.
+
+Validation:
+- Phrase appears only on the three intended pages.
+- JSON-LD parse: PASS
+- site.js syntax: PASS
+- sitemap XML: PASS

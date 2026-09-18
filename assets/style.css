@@ -339,3 +339,13 @@ footer p{color:#aebdc9;font-size:12px;line-height:1.6}
 .keyword-price-heading{margin-bottom:18px}
 .keyword-price-heading h2{margin-bottom:0}
 .asr-search-note{font-size:13px}
+
+.erkilet-support-note{font-size:13px;color:var(--muted)}
+
+.home-search-intent{padding-top:28px;padding-bottom:36px}
+.intent-copy{max-width:900px}
+.intent-copy p{color:var(--muted);line-height:1.72;margin:0 0 13px}
+.keyword-cluster-note{margin-top:13px;padding:13px 15px;border-left:3px solid var(--gold);background:#fffaf0;border-radius:0 10px 10px 0}
+.keyword-cluster-note p{margin:0 0 7px!important;font-size:13px}
+.keyword-cluster-note p:last-child{margin-bottom:0!important}
+.supporting-longtail-note{padding:13px 15px;background:#fbfaf7;border:1px solid var(--line);border-radius:11px}
